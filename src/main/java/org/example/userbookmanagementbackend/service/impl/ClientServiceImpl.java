@@ -1,7 +1,7 @@
 package org.example.userbookmanagementbackend.service.impl;
 
 import lombok.AllArgsConstructor;
-import org.example.userbookmanagementbackend.Transformer.ClientTransformer;
+import org.example.userbookmanagementbackend.transformer.ClientTransformer;
 import org.example.userbookmanagementbackend.bean.Client;
 import org.example.userbookmanagementbackend.dao.ClientDao;
 import org.example.userbookmanagementbackend.dto.ClientDto;

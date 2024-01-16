@@ -1,17 +1,17 @@
-package org.example.userbookmanagementbackend.Transformer;
+package org.example.userbookmanagementbackend.transformer;
 
-import org.example.userbookmanagementbackend.bean.Client;
-import org.example.userbookmanagementbackend.dto.ClientDto;
+import org.example.userbookmanagementbackend.bean.Author;
+import org.example.userbookmanagementbackend.dto.AuthorDto;
 import org.springframework.stereotype.Component;
 
 @Component
-public class ClientTransformer extends AbstractTransformer<Client, ClientDto> {
+public class AuthorTransformer extends AbstractTransformer<Author, AuthorDto> {
     @Override
-    public Client toEntity(ClientDto dto) {
+    public Author toEntity(AuthorDto dto) {
         if (dto == null) {
             return null;
         } else {
-            Client entity = new Client();
+            Author entity = new Author();
             entity.setId(dto.id());
             entity.setFirstName(dto.firstName());
             entity.setLastName(dto.lastName());
@@ -22,11 +22,11 @@ public class ClientTransformer extends AbstractTransformer<Client, ClientDto> {
     }
 
     @Override
-    public ClientDto toDto(Client entity) {
+    public AuthorDto toDto(Author entity) {
         if (entity == null) {
             return null;
         } else {
-            return new ClientDto(
+            return new AuthorDto(
                     entity.getId(),
                     entity.getFirstName(),
                     entity.getLastName(),
@@ -36,3 +36,4 @@ public class ClientTransformer extends AbstractTransformer<Client, ClientDto> {
         }
     }
 }
+

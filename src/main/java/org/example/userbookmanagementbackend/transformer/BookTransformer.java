@@ -1,8 +1,7 @@
-package org.example.userbookmanagementbackend.Transformer;
+package org.example.userbookmanagementbackend.transformer;
 
 import lombok.AllArgsConstructor;
 import org.example.userbookmanagementbackend.bean.Book;
-import org.example.userbookmanagementbackend.bean.Category;
 import org.example.userbookmanagementbackend.dto.BookDto;
 import org.springframework.stereotype.Component;
 

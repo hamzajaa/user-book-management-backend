@@ -1,9 +1,9 @@
 package org.example.userbookmanagementbackend.service.impl;
 
 import lombok.AllArgsConstructor;
-import org.example.userbookmanagementbackend.Transformer.BookTransformer;
-import org.example.userbookmanagementbackend.Transformer.TransactionTransformer;
-import org.example.userbookmanagementbackend.Transformer.ClientTransformer;
+import org.example.userbookmanagementbackend.transformer.BookTransformer;
+import org.example.userbookmanagementbackend.transformer.TransactionTransformer;
+import org.example.userbookmanagementbackend.transformer.ClientTransformer;
 import org.example.userbookmanagementbackend.bean.Book;
 import org.example.userbookmanagementbackend.bean.Client;
 import org.example.userbookmanagementbackend.bean.Transaction;
